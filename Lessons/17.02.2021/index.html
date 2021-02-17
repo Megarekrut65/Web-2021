@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>HTML5 - Формы</title>
+    </head>
+    <body>
+        <form>
+        <p align="center">
+            <table width = "900" style="border-spacing: 0px 15px;">
+                <tr>
+                    <th><h1>Форма заявки на работу в зоопарке</h1></th>
+                </tr>
+                <tr>
+                    <td><i>Пожалуйста, заполните форму. Обязательные поля помечены <span style="color:red">*</span></i></td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset >
+                            <legend>Контактная информация</legend>
+                            <table width = "100%">
+                                <tr>
+                                    <td width="30%"><label for="name">Имя<span style="color:red">*</span></label></td>
+                                    <td><input size="30" type="text" id="name" required></td>
+                                </tr>
+                                <tr>
+                                    <td width="30%"><label for="phone">Телефон</label></td>
+                                    <td><input size="30" type="tel" id="phone"></td>
+                                </tr>
+                                <tr>
+                                    <td width="30%"><label for="email">Email<span style="color:red">*</span></label></td>
+                                    <td><input size="30" type="email" id="email" required></td>
+                                </tr>
+                                
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset >
+                            <legend>Персональная информация</legend>
+                            <table width = "100%">
+                                <tr>
+                                    <td width="30%"><label for="age">Возраст<span style="color:red">*</span></label></td>
+                                    <td><input style="width:250px" type="number" id="age" required></td>
+                                </tr>
+                                <tr>
+                                    <td width="30%"><label for="sex">Пол</label></td>
+                                    <td><select id="sex" style="width:250px">
+                                            <option>Женщина</option>
+                                            <option>Мужчина</option>
+                                            <option>Другое</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="30%"><label for="quality">Перечислите<br>личные<br>качества</label></td>
+                                    <td><textarea id="quality" style="min-width:250px; max-width:400px; min-height: 150px; max-height: 300px"></textarea></td>
+                                </tr>                                
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset >
+                            <legend>Выберите ваших любимых животных</legend>
+                            <table width = "100%">
+                                <tr>
+                                    <td align="right"><input type="checkbox" id="checkbox1"></td>
+                                    <td><label for="checkbox1">Зебра</label></td>
+                                    <td align="right"><input type="checkbox" id="checkbox2"></td>
+                                    <td><label for="checkbox2">Кошак</label></td>
+                                    <td align="right"><input type="checkbox" id="checkbox3"></td>
+                                    <td><label for="checkbox3">Анаконда</label></td>
+                                    <td align="right"><input type="checkbox" id="checkbox4"></td>
+                                    <td><label for="checkbox4">Человек</label></td>
+                                </tr>    
+                                <tr>
+                                    <td align="right"><input type="checkbox" id="checkbox5"></td>
+                                    <td><label for="checkbox5">Слон</label></td>
+                                    <td align="right"><input type="checkbox" id="checkbox6"></td>
+                                    <td><label for="checkbox6">Антилопа</label></td>
+                                    <td align="right"><input type="checkbox" id="checkbox7"></td>
+                                    <td><label for="checkbox7">Голубь</label></td>
+                                    <td align="right"><input type="checkbox" id="checkbox8"></td>
+                                    <td><label for="checkbox8">Краб</label></td>
+                                </tr>                                
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" style="width: 250px; height: 45px; font-size:14pt" value="Отправить информацию"></td>
+                </tr>
+            </table>
+        </p>
+        </form>
+    </body>
+</html>
