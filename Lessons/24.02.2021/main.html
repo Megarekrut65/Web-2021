@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title></title>
+        <style> 
+            .ellipse,.cycle,.square
+            {
+                width: 200px;
+                height: 200px;
+                position: absolute;
+            }
+            .ellipse
+            {
+                background-color: yellow;
+                border-radius: 50%;
+                border: 3px solid blue;
+                height: 150px;
+                z-index: 2;
+            }    
+            .cycle
+            {
+                background-color: red;
+                border-radius: 50%;
+                z-index: 1;
+                margin-left:120px;
+            }  
+            .square
+            {
+                background-color: green;
+                z-index: 2;
+                margin-left:220px;
+                margin-top:80px;
+            }  
+            .base
+            {
+                width: 500px;
+                height: 400px;
+                margin: auto;
+            }  
+        </style>
+    </head>
+    <body>
+        <div class ="base">
+            <div class ="ellipse"></div>
+            <div class ="cycle"></div>
+            <div class ="square"></div>
+        </div>
+    </body>
+</html>
