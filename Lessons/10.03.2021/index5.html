@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Web</title>
+        <style>
+            .box-base
+            {
+                position: relative;
+                margin: auto;
+                width: auto;
+                height: auto;
+                background-color: black;
+            }
+            .box-left,.box-right,.box-header,.box-footer, .box-body
+            {            
+                position: absolute;
+                padding:5px;
+            }
+            .box-left,.box-right
+            {
+                background-color: rgb(189, 100, 100);
+                width: 100px;
+                height: 400px;
+            }
+            .box-header,.box-footer
+            {
+                width: 600px;
+                height: 100px;
+                background-color: rgb(83, 5, 5);
+                color:white;
+            }
+            .box-footer
+            {
+                top:500;
+                left:200px;
+            }
+            .box-header
+            {
+                top:0;
+                left:200px;
+            }
+            .box-body
+            {
+                background-color: rgb(185, 58, 58);
+                width: 400px;
+                height: 400px;
+                left:300px;
+                top:100px;
+            }
+            .box-left
+            {
+                left:200px;
+                top:100px;
+            }
+            .box-right
+            {
+                top:100px;
+                left:700px;
+            }
+
+        </style>
+    </head>
+    <body>  
+        <div class="box-base">
+            <div class="box-header">header</div>
+            <div class="box-left">left</div>
+            <div class="box-body">content</div>
+            <div class="box-right">right</div>
+            <div class="box-footer">footer</div>
+        </div>
+    </body>
+</html>
