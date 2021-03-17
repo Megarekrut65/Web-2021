@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <title>Web</title>
+        <style>           
+            .boxA,.boxB,.boxC,.boxTask1,.boxTask2,.boxTask3
+            {
+                display: flex;
+                border: 1px solid black;
+                margin-bottom: 10px;
+            }  
+            .boxTask3
+            {
+                height: 400px;
+            }
+            .boxTask2
+            {
+                flex-direction: column-reverse;
+                align-items: flex-end;
+                height: auto;
+            }
+            .boxTask1
+            {
+                align-items: center;
+                justify-content: center;
+                height: 200px;
+            }            
+            .boxA
+            {               
+                align-items: center;
+            }
+            .boxB
+            {               
+                align-items: stretch;
+                height: auto;
+                width: 100%;
+            }
+            .boxC
+            {
+                align-items: baseline;
+            }
+            .box5,.box6,.box7,.box8,.box1,.box2,.box3,.box4
+            {
+                padding:10px;
+            }
+            .box5,.box6,.box7,.box8,.box1,.box2,.box3,.box4,.boxT1,.boxT2,.boxT3,.boxT4,.boxTHei,.boxTMid,.boxTBas
+            {           
+                color:white;
+                text-align: center;
+            }
+            .box5,.box6,.box7,.box8
+            {
+                width: 100px;
+            }
+            .box1,.box2,.box3,.box4
+            {
+                width: 100%;
+                vertical-align: middle;
+            }
+            .boxT1,.boxT2,.boxT3,.boxT4,.boxTMid,.boxTHei,.boxTBas
+            {
+                width: 50px;            
+                margin:10px;               
+            }
+            .boxT1,.boxT2,.boxT3,.boxT4,.boxTMid,.boxTBas
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .boxT1
+            {
+                font-size:40px;
+                height: 100px;
+            }
+            .boxT2,.boxTMid,.boxTHei,.boxTBas
+            {
+                font-size:30px;           
+            }
+            .boxT2,.boxTMid,.boxTBas
+            {
+                height: 90px;
+            }
+            .boxT3
+            {
+                font-size:20px;
+                height: 80px;
+            }
+            .boxT4
+            {
+                font-size:10px;
+                height: 50px;
+            }
+            .box5
+            {
+                height: 100px;
+            }
+            .box6
+            {
+                height: 80px;
+            }
+            .box7
+            {
+                height: 200px;
+            }
+            .box8
+            {
+                height: 180px;
+            }
+            .boxTMid
+            {
+                align-self:center;
+            }
+            .boxTHei
+            {
+                align-self: stretch;
+            }
+            .boxTBas
+            {
+                flex-basis: 100px;
+            }
+            .box5,.box1,.boxT1
+            {
+                background-color:red;
+            }
+            .box6,.box2,.boxT2,.boxTMid,.boxTHei,.boxTBas
+            {
+                background-color:green;
+            }
+            .box7,.box3,.boxT3
+            {
+                background-color:yellow;
+                color:black;
+            }
+            .box8,.box4,.boxT4
+            {
+                background-color:blue;
+            }
+        </style>
+    </head>
+    <body>      
+        <p>
+            <div class="boxA">
+                <div class="box5">1</div>
+                <div class="box6">2</div>
+                <div class="box7">3</div>
+                <div class="box8">4</div>
+            </div>
+            <div class="boxB">
+                <div class="box1">Продукция нашей компании производится на современном оборудовании, из экологически чистых материалов высокого качества</div>
+                <div class="box2">Продукция нашей компании производится на современном оборудовании, из экологически чистых материалов высокого качества</div>
+                <div class="box3">Продукция нашей компании производится на современном оборудовании, из экологически чистых материалов высокого качества</div>
+                <div class="box4">Продукция нашей компании производится на современном оборудовании, из экологически чистых материалов высокого качества</div>
+            </div>
+            <div class="boxC">
+                <div class="box5">1</div>
+                <div class="box6"><p>2</p></div>
+                <div class="box7">3</div>
+                <div class="box8"><p>4</p></div>
+            </div>
+            <div class="boxTask1">
+                <div class="boxT1"><p>1</p></div>
+                <div class="boxT2"><p>2</p></div>
+                <div class="boxT3"><p>3</p></div>
+                <div class="boxT4"><p>4</p></div>
+            </div>
+            <div class="boxTask2">
+                <div class="boxT1"><p>1</p></div>
+                <div class="boxT2"><p>2</p></div>
+                <div class="boxT3"><p>3</p></div>
+                <div class="boxT4"><p>4</p></div>
+            </div>
+            <div class="boxTask3">
+                <div class="boxT1"><p>1</p></div>
+                <div class="boxTMid"><p>2</p></div>
+                <div class="boxT3"><p>3</p></div>
+                <div class="boxT4"><p>4</p></div>
+            </div>
+            <div class="boxTask3">
+                <div class="boxT1"><p>1</p></div>
+                <div class="boxTHei"><p>2</p></div>
+                <div class="boxT3"><p>3</p></div>
+                <div class="boxT4"><p>4</p></div>
+            </div>
+            <div class="boxTask3">
+                <div class="boxT1"><p>1</p></div>
+                <div class="boxTBas"><p>2</p></div>
+                <div class="boxT3"><p>3</p></div>
+                <div class="boxT4"><p>4</p></div>
+            </div>
+        </p>
+        cn 16
+    </body>
+</html>
