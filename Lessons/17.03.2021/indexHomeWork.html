@@ -2,13 +2,22 @@
     <head>
         <title>Web</title>
         <style>           
-            .boxA,.boxB,.boxC,.boxTask1,.boxTask2,.boxTask3
+            .boxA,.boxB,.boxC,.boxTask1,.boxTask2,.boxTask3,.boxTask4,.boxTask5
             {
                 display: flex;
                 border: 1px solid black;
                 margin-bottom: 10px;
             }  
-            .boxTask3
+            .boxTask5
+            {
+                width: 100%;
+                height: auto;
+            }
+            .boxTask4
+            {
+                flex-direction:column;
+            } 
+            .boxTask3,.boxTask4
             {
                 height: 400px;
             }
@@ -38,34 +47,68 @@
             {
                 align-items: baseline;
             }
-            .box5,.box6,.box7,.box8,.box1,.box2,.box3,.box4
+            .box5,.box6,.box7,.box8,.box1,.box2,.box3,.box4,.boxGr1,.boxGr2,.boxGr3,.boxGr4,.boxGr22,.boxGr33,.boxLong8
             {
                 padding:10px;
             }
-            .box5,.box6,.box7,.box8,.box1,.box2,.box3,.box4,.boxT1,.boxT2,.boxT3,.boxT4,.boxTHei,.boxTMid,.boxTBas
+            .box5,.box6,.box7,.box8,.box1,.box2,.box3,.box4,.boxT1,.boxT2,.boxT3,.boxT4,.boxTHei,.boxTMid,.boxTBas,.boxGr1,.boxGr2,.boxGr3,.boxGr4,.boxGr22,.boxGr33,.boxLong8
             {           
                 color:white;
                 text-align: center;
             }
-            .box5,.box6,.box7,.box8
+            .box5,.box6,.box7,.box8,.boxGr1,.boxGr2,.boxGr3,.boxGr4,.boxGr22,.boxGr33
             {
                 width: 100px;
             }
             .box1,.box2,.box3,.box4
             {
-                width: 100%;
                 vertical-align: middle;
+            }
+            .box1
+            {
+                width: 15%;
+            }
+            .box2
+            {
+                width: 25%;
+            }
+            .box3
+            {
+                width: 15%;
+            }
+            .box4
+            {
+                width: 45%;
+            }
+            .boxLong8
+            {
+                width: 100%;
+                padding:0px;
             }
             .boxT1,.boxT2,.boxT3,.boxT4,.boxTMid,.boxTHei,.boxTBas
             {
                 width: 50px;            
                 margin:10px;               
             }
-            .boxT1,.boxT2,.boxT3,.boxT4,.boxTMid,.boxTBas
+            .boxT1,.boxT2,.boxT3,.boxT4,.boxTMid,.boxTBas,.boxGr1,.boxGr2,.boxGr3,.boxGr4,.boxGr22,.boxGr33
             {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+            }
+            .boxGr1,.boxGr2,.boxGr3,.boxGr4,.boxGr22,.boxGr33
+            {
+                flex-grow: 1;
+                height: 120px;
+                margin:10px;   
+            }
+            .boxGr33
+            {
+                flex-grow: 3;
+            }
+            .boxGr22
+            {
+                flex-grow: 2;
             }
             .boxT1
             {
@@ -116,24 +159,101 @@
             }
             .boxTBas
             {
-                flex-basis: 100px;
+                flex-basis: 250px;
             }
-            .box5,.box1,.boxT1
+            .box5,.box1,.boxT1,.boxGr1
             {
                 background-color:red;
             }
-            .box6,.box2,.boxT2,.boxTMid,.boxTHei,.boxTBas
+            .box6,.box2,.boxT2,.boxTMid,.boxTHei,.boxTBas,.boxGr2,.boxGr33
             {
                 background-color:green;
             }
-            .box7,.box3,.boxT3
+            .box7,.box3,.boxT3,.boxGr3,.boxGr22
             {
                 background-color:yellow;
                 color:black;
             }
-            .box8,.box4,.boxT4
+            .box8,.box4,.boxT4,.boxGr4,.boxLong8
             {
                 background-color:blue;
+            }
+            .myBaseBox1,.myBaseBox2,.myBaseBox3,.myBaseBox,.myBaseBox4,.myBaseBox5
+            {
+                display: flex;
+                flex-wrap: wrap;
+                background:white;
+                height: auto;
+                width: auto;
+                margin: 20px;
+                padding:2px;
+            }
+            .myBaseBox1,.myBaseBox2,.myBaseBox3,.myBaseBox4,.myBaseBox5
+            {    
+                border-radius: 10px;
+                box-shadow: 0 0 15px black;            
+            }
+            .myBaseBox5
+            {
+                height: 200px;
+                width: 524px;
+            }
+            .myBaseBox4
+            {
+                height: 200px;
+                width: 524px;
+            }
+            .myBaseBox1
+            {
+                width: 120px;
+            }
+            .myBaseBox2
+            {
+                width: 236px;
+                height: 306px;
+            }
+            .myBaseBox3
+            {
+                width: 404px;
+                height: 310px;
+            }
+            .boxYellow,.boxPink,.boxBlue
+            {
+                width: 100px;
+                height: 50px;
+                margin: 5px;
+                flex-grow: 1;
+                box-shadow: 0 0 2px black;      
+            }
+            .boxYellow
+            {
+                background:gold;
+            }
+            .boxBlue
+            {
+                background:mediumaquamarine;
+            }
+            .boxPink
+            {
+                background:orchid;
+            }
+            .boxBig1
+            {
+                height: 65px;
+            }
+            .boxBig2
+            {
+                height: 90px;
+                width: 120px;
+            }
+            .boxBig3
+            {
+                height: 90px;
+                width: 80px;
+            }
+            .boxFlexGrow
+            {
+                flex-grow: 2;
             }
         </style>
     </head>
@@ -155,7 +275,7 @@
                 <div class="box5">1</div>
                 <div class="box6"><p>2</p></div>
                 <div class="box7">3</div>
-                <div class="box8"><p>4</p></div>
+                <div class="boxLong8"><p>Продукция нашей компании производится на современном оборудовании, из экологически чистых материалов высокого качества</p></div>
             </div>
             <div class="boxTask1">
                 <div class="boxT1"><p>1</p></div>
@@ -187,7 +307,83 @@
                 <div class="boxT3"><p>3</p></div>
                 <div class="boxT4"><p>4</p></div>
             </div>
+            <div class="boxTask4">
+                <div class="boxT1"><p>1</p></div>
+                <div class="boxTBas"><p>2</p></div>
+                <div class="boxT3"><p>3</p></div>
+                <div class="boxT4"><p>4</p></div>
+            </div>
+            <div class="boxTask5">
+                <div class="boxGr1"><p>1</p></div>
+                <div class="boxGr2"><p>2</p></div>
+                <div class="boxGr3"><p>3</p></div>
+                <div class="boxGr4"><p>4</p></div>
+            </div>
+            <div class="boxTask5">
+                <div class="boxGr1"><p>1</p></div>
+                <div class="boxGr2"><p>2</p></div>
+                <div class="boxGr22"><p>3</p></div>
+                <div class="boxGr4"><p>4</p></div>
+            </div>
+            <div class="boxTask5">
+                <div class="boxGr1"><p>1</p></div>
+                <div class="boxGr33"><p>2</p></div>
+            </div>
         </p>
-        cn 16
+        <p>
+            Завдання
+            <div class="myBaseBox">
+                <div class="myBaseBox1">
+                    <div class="boxBlue"></div>
+                    <div class="boxBlue"></div>
+                    <div class="boxBlue"></div>
+                    <div class="boxYellow"></div>
+                    <div class="boxYellow"></div>
+                    <div class="boxYellow"></div>
+                    <div class="boxPink"></div>
+                    <div class="boxPink"></div>          
+                </div>
+                <div class="myBaseBox2">
+                    <div class="boxBlue boxBig1"></div>
+                    <div class="boxBlue boxBig1"></div>
+                    <div class="boxBlue boxBig1"></div>
+                    <div class="boxYellow boxBig1"></div>
+                    <div class="boxYellow boxBig1"></div>
+                    <div class="boxYellow boxBig1"></div>
+                    <div class="boxPink boxBig1"></div>
+                    <div class="boxPink boxBig1"></div>          
+                </div>
+                <div class="myBaseBox3">
+                    <div class="boxBlue boxBig2"></div>
+                    <div class="boxBlue boxBig2"></div>
+                    <div class="boxBlue boxBig2"></div>
+                    <div class="boxYellow boxBig2"></div>
+                    <div class="boxYellow boxBig2"></div>
+                    <div class="boxYellow boxBig2"></div>
+                    <div class="boxPink boxBig2"></div>
+                    <div class="boxPink boxBig2 boxFlexGrow"></div>          
+                </div>
+                <div class="myBaseBox4">
+                    <div class="boxBlue boxBig2"></div>
+                    <div class="boxBlue boxBig2"></div>
+                    <div class="boxBlue boxBig2"></div>
+                    <div class="boxYellow boxBig2"></div>
+                    <div class="boxYellow boxBig2"></div>
+                    <div class="boxYellow boxBig2"></div>
+                    <div class="boxPink boxBig2"></div>
+                    <div class="boxPink boxBig2"></div>          
+                </div>
+                <div class="myBaseBox5">
+                    <div class="boxBlue boxBig3"></div>
+                    <div class="boxBlue boxBig3"></div>
+                    <div class="boxBlue boxBig3"></div>
+                    <div class="boxYellow boxBig3"></div>
+                    <div class="boxYellow boxBig3"></div>
+                    <div class="boxYellow boxBig3 boxFlexGrow"></div>
+                    <div class="boxPink boxBig3"></div>
+                    <div class="boxPink boxBig3 boxFlexGrow"></div>          
+                </div>
+            </div>
+        </p>
     </body>
 </html>
