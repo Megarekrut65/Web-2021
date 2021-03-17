@@ -2,8 +2,338 @@
     <head>
         <title>Web</title>
         <style>
+            .boxBase
+            {            
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+            .box1,.box2,.box3
+            {
+                position: absolute;
+            }
+            .box1,.box2,.box3
+            {
+                width: 450px;
+                height: 480px;
+                margin:15px;
+                background-repeat: no-repeat;
+                background-size:100%;
+            }
+            .box1,.box3
+            {
+                z-index: 0;
+            }
+            .box1
+            {
+                background-image:url("https://www.designbolts.com/wp-content/uploads/2015/07/low-poly-iphone-6-wallpaper.jpg");
+            }
+            .box3
+            {
+                left:55%;
+                background-image:url("https://www.designbolts.com/wp-content/uploads/2015/07/Dark-Polygon-iphone-6-background.jpg");
+            }
+            .box2
+            {
+                left:28%;
+                top: 20%;
+                z-index: 1;
+                background-image:url("https://u01.appmifile.com/images/2018/10/22/47d59356-bb4e-49b9-b1b8-b6d30f31e44f.png");
+            }
+            .big-image,.menu
+            {
+                width: 55%;
+                height: 45%;
+                border:1px solid white;
+                margin:10px;    
+                z-index:10;
+            }  
+            .big-image
+            {
+                width: 100%;
+                height: 80%;
+            }
+            .middle-image,.middle-image-mid
+            {
+                border:2px solid rgb(61, 57, 57);
+                margin:5px;
+                width: 50%;
+                height: 40%;
+                float:left;
+            }
+            .middle-image-mid
+            {
+                border:2px solid rgb(15, 211, 41);
+            }
+            .menu-top,.menu-top-mid,.menu-text,.box-images
+            {
+                position: absolute;
+            }
+            .menu-top,.menu-top-mid
+            {
+                margin: 0px;
+                width: 100%;
+                height: 10%;
+                top:0%;
+                left:0%;           
+            }     
+            .menu-top-mid
+            {
+                background: rgb(44, 94, 134);
+            }   
+            .menu
+            {      
+                position: relative;         
+                padding:0;
+                background:rgb(212, 204, 204);
+                font-size:10px;
+            }
+            .menu-text
+            {
+                background:white;
+                width: 100%;
+                height: 90%;
+                bottom: 0%;
+                overflow: hidden;
+            }
+            .menu-block,.menu-block-set,.menu-block-mid,.menu-block-set-mid
+            {
+                height: 100%;
+                width: 30%;
+                background:rgb(245, 245, 245);
+                margin: 2px;
+                align-items: center;
+                justify-content: center;
+                font-size:1px;
+                padding-bottom:2px;
+                color:teal;
+                font-weight:bold;
+            }
+            .menu-block-mid,.menu-block-set-mid,.img-text P,.box-images-text
+            {
+                color:white;
+            }
+            .menu-block-mid
+            {
+                background:steelblue;              
+            }
+            .menu-block-set-mid
+            {
+                background:yellowgreen;
+            }
+            .menu-block-set
+            {
+                background:white;
+                color:violet;
+            }
+            .img-text
+            {
+                width: 55%;
+                height: 50%;
+            }
+            p
+            {
+                padding:5px;
+            }
+            .img-text P
+            {
+                padding-top:0;            
+                text-align: center;
+                font-size:10px;
+                margin:0;
+            }
+            .link-text
+            {
+                font-size:5px;
+                color:blue;
+                text-decoration:underline;
+            }
+            .box-images,.menu-block,.menu-block-set,.menu-block-mid,.menu-block-set-mid,.menu-top,.menu-top-mid
+            {
+                display: flex;
+            }
+            .box-images
+            {         
+                flex-wrap: wrap;
+                right:0%;
+                top:0%;
+                margin:10px;
+                width: 160px;
+                height: 80%;
+                z-index:13;
+            }
+            .small-image
+            {
+                width: 50px;
+                height: 50px;
+                border: 2px solid white;
+                margin:5px;
+                margin-top:0;
+                margin-bottom: 0;
+            }
+            .menu-text P 
+            {
+                padding-bottom: 0px;
+            }
+            .box-images-text
+            {
+                padding-top:0;
+                padding-bottom: 0;
+                font-size:1px;
+                text-align: center;
+            }
+            .right-image
+            {
+                width: 150px;
+                height: 90px;
+                border: 2px solid white;
+                margin:0px;
+            }
+            .menu-block-mid:hover
+            {
+                background:yellowgreen;
+            } 
+            .menu-block-set-mid:hover
+            {
+                background:steelblue;
+            } 
+            .menu-block:hover
+            {
+                color:violet;
+            }
+            .menu-block-set:hover
+            {
+                color:teal;
+            }
         </style>
     </head>
     <body>
+        <div class="boxBase">
+            <div class="box1">
+                <div class="img-text">
+                    <img src="https://i.pinimg.com/474x/72/d5/41/72d541bd2ef1821fb6744b5432403cac.jpg" class="big-image">
+                    <p>Хамелеон</p>
+                </div>
+                <div class="box-images">
+                    <div>
+                        <img src="https://static.dw.com/image/15729944_303.jpg" class="small-image">
+                        <p class="box-images-text">Щур</p>
+                    </div>
+                    <div>
+                        <img src="https://i.pinimg.com/564x/c3/5e/4c/c35e4c5408a98ea1ba79b9d1c03d4f88.jpg" class="small-image">
+                        <p class="box-images-text">Сова</p>
+                    </div>
+                    <div>
+                        <img src="https://lvivlis.gov.ua/cache/thumbnails/_/__1552386078_600x480_3_0.jpg" class="small-image">
+                        <p class="box-images-text">Кріль</p>
+                    </div>
+                    <div>
+                        <img src="https://radiotrek.rv.ua/media/gallery/full/m/a/maxresdefault-1.jpg" class="small-image">
+                        <p class="box-images-text">Єнот</p>
+                    </div>
+                    <div>
+                        <img src="https://kor.ill.in.ua/m/610x385/2059306.jpg" class="small-image">
+                        <p class="box-images-text">Коала</p>
+                    </div>
+                    <div>
+                        <img src="https://www.4vsar.ru/i/news/xxl/206090.jpg" class="small-image">
+                        <p class="box-images-text">Порося</p>
+                    </div>
+                    <div>
+                        <img src="https://lh3.googleusercontent.com/proxy/FA7r1onNv7JofAyyRle5RIPgREn-abDmmXO0cVsPsWMAyWfsEcdBlkzHSWQEVVN9oIahgoteBNM5IaHendpMFHY_WbzoxljyHKMYV9rlTWxzMgbAEq021OoCpK_1B2FW_8ZsmAmZKqAxHwOPF1k" class="small-image">
+                        <p class="box-images-text">Теля</p>
+                    </div>
+                    <div>
+                        <img src="https://pustunchik.ua/uploads/school/cache/9a7adb79dd800aa15c3cc0e482e004c8.jpg" class="small-image">
+                        <p class="box-images-text">Собака</p>
+                    </div>
+                    <div>
+                        <img src="https://s3.eu-central-1.amazonaws.com/img.hromadske.ua/posts/208679/pantheratigrissumatransubspeciesjpg/medium.jpg" class="small-image">
+                        <p class="box-images-text">Тигр</p>
+                    </div>
+                    <div>
+                        <img src="https://media.slovoidilo.ua/media/publications/7/67517/67517-1_large.jpg" class="small-image">
+                        <p class="box-images-text">Кіт</p>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="menu-top">
+                        <div class="menu-block-set">Інфо</div>
+                        <div class="menu-block">Ареал</div>
+                        <div class="menu-block">Факти</div>
+                    </div>
+                    <div class="menu-text">
+                        <img src="https://mobimg.b-cdn.net/pic/v2/gallery/preview/fon-rasteniya-trava-16242.jpg" class="middle-image">
+                        <p>
+                            Більшість хамелеонів змінюють колір від коричневого до зеленого і чорного, але деякі можуть ставати практично будь-якого кольору. Зміна може статися менш ніж за 20 секунд. 
+                        </p>
+                        <p class="link-text">
+                            Дізнатися більше
+                        </p>
+                    </div>                   
+                </div>
+            </div>
+            <div class="box2">
+                <div class="img-text">
+                <img src="https://i.pinimg.com/564x/14/54/2a/14542a09f3abffd851a353f04e0662fd.jpg" class="big-image">
+                </div>                
+                <div class="menu">
+                    <div class="menu-top-mid">
+                        <div class="menu-block-set-mid">Інфо</div>
+                        <div class="menu-block-mid">Ареал</div>
+                        <div class="menu-block-mid">Факти</div>
+                    </div>
+                    <div class="menu-text">
+                        <img src="https://mobimg.b-cdn.net/pic/v2/gallery/preview/fon-rasteniya-trava-16242.jpg" class="middle-image-mid">
+                        <p>
+                            Серед всіх хутрових звірів блакитний песець в дикій природі є одним з найрідкісніших. З цієї причини ні про яке полювання, в даному випадку мова не йде. Однак блакитного песця досить успішно розводять в неволі.
+                        </p>
+                        <p class="link-text">
+                            Дізнатися більше
+                        </p>
+                    </div>                   
+                </div>
+            </div>
+            <div class="box3">
+                <div class="img-text">
+                    <img src="https://1.bp.blogspot.com/-K_BrSF67hzo/WrJhTrh6w5I/AAAAAAAACLY/OkOQaQodAHIK0fWBqAxw9WnWOc4KvxyXwCLcBGAs/s320/1478686143_0_3cdeb_a10dda91_xl.jpg" class="big-image">
+                    <p>Сонечко</p>
+                </div>
+                <div class="box-images">
+                    <div>
+                        <img src="https://i.pinimg.com/564x/14/54/2a/14542a09f3abffd851a353f04e0662fd.jpg" class="right-image">
+                        <p class="box-images-text">Песець</p>
+                    </div>
+                    <div>
+                        <img src="https://i.pinimg.com/474x/72/d5/41/72d541bd2ef1821fb6744b5432403cac.jpg" class="right-image">
+                        <p class="box-images-text">Хамелеон</p>
+                    </div>
+                    <div>
+                        <img src="https://1.bp.blogspot.com/-K_BrSF67hzo/WrJhTrh6w5I/AAAAAAAACLY/OkOQaQodAHIK0fWBqAxw9WnWOc4KvxyXwCLcBGAs/s320/1478686143_0_3cdeb_a10dda91_xl.jpg" class="right-image">
+                        <p class="box-images-text">Сонечко</p>
+                    </div>
+                    <div>
+                        <img src="https://mobimg.b-cdn.net/pic/v2/gallery/preview/fon-rasteniya-trava-16242.jpg" class="right-image">
+                        <p class="box-images-text">Ліс</p>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="menu-top">
+                        <div class="menu-block-set">Інфо</div>
+                        <div class="menu-block">Ареал</div>
+                        <div class="menu-block">Факти</div>
+                    </div>
+                    <div class="menu-text">
+                        <img src="https://mobimg.b-cdn.net/pic/v2/gallery/preview/fon-rasteniya-trava-16242.jpg" class="middle-image">
+                        <p>
+                            Божа корівка здатна змахувати крилами до 85 разів на секунду. В якості захисту, сонечко виділяє отруту у вигляді жовтої рідини, яка відлякує її ворогів (жаб, павуків і деяких комах).
+                        </p>
+                        <p class="link-text">
+                            Дізнатися більше
+                        </p>
+                    </div>                   
+                </div>
+            </div>
+        </div>
     </body>
 </html>
