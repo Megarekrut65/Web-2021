@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Web</title>
+        <style>
+            .grid-container1,.grid-container2
+            {
+                display:grid;
+                grid-gap: 50px 50px;               
+                margin:50px;
+                padding: 10px;
+                border: 2px solid black;
+            }
+            .grid-container1
+            {
+                grid-template-areas: 
+                                    ". a a a a"
+                                    "b b . . c"
+                                    "d d d . e"; 
+                grid-template-columns: repeat(5,1fr); 
+            }
+            .grid-container2
+            {
+                margin-top:150px;
+                grid-template-areas: 
+                                    "a . b b . c"
+                                    "a . . . . c"
+                                    "a . d . . ."
+                                    "a . d . . e";  
+                grid-template-columns: repeat(6,1fr);           
+            }
+            .grid-item1,.grid-item2,.grid-item3,.grid-item4,.grid-item5
+            {
+                padding:5px;
+                background: orange; 
+            }
+            .grid-item1
+            {
+                grid-area: c;
+            }
+            .grid-item2
+            {
+                grid-area: b;
+            }
+            .grid-item3
+            {
+                grid-area: d;
+            }
+            .grid-item4
+            {
+                grid-area: a;
+            }
+            .grid-item5
+            {
+                grid-area: e;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container1">
+            <div class="grid-item1">1</div>
+            <div class="grid-item2">2</div>
+            <div class="grid-item3">3</div>
+            <div class="grid-item4">4</div>
+            <div class="grid-item5">5</div>
+        </div>
+
+        <div class="grid-container2">
+            <div class="grid-item1">1</div>
+            <div class="grid-item2">2</div>
+            <div class="grid-item3">3</div>
+            <div class="grid-item4">4</div>
+            <div class="grid-item5">5</div>
+        </div>
+    </body>
+</html>
