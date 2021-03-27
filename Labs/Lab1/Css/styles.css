@@ -109,3 +109,16 @@ html,body
 {
     text-align: right;
 }
+.menu
+{
+    width: 100%;
+    background:rgb(70, 63, 63);
+    display:flex;
+    justify-content: center;
+}
+.menu-item
+{
+    color:white;
+    margin-left:10px;
+    margin-right:10px;
+}
