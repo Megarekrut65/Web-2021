@@ -20,6 +20,12 @@ html,body
     min-width: 1000px;
     height: 100%;
 }
+.cover-class
+{
+    display: grid;
+    grid-template-rows: 150px 50px 300px 1fr 150px;
+    overflow-y: scroll;
+}
 .content
 {
     min-height: 100%;
@@ -180,13 +186,19 @@ html,body
     color:white;
     text-align: center;
 }
+.slider
+{
+    background:rgb(247, 240, 240);
+    width: 100%;
+}
 .under-menu-image
 {
+    margin-left:auto;
+    margin-right:auto;
     overflow: hidden;
     z-index: 0;
-    width: 100%;
+    width: 1000px;
     height: 300px;
-    background:rgb(247, 240, 240);
     position: relative;
 }
 .red-circle,.blue-circle,.green-circle
@@ -202,7 +214,7 @@ html,body
 }
 .red2
 {
-    left:75%;
+    left:50%;
     top:10%;
 }
 .red-circle
@@ -214,18 +226,13 @@ html,body
 }
 .green1
 {
-    left:-10%;
-    top:-5%;
+    left:0%;
+    top:-15%;
 }
 .green2
 {
-    left:90%;
-    top:70%;
-}
-.green3
-{
-    left:50%;
-    top:10%;
+    left:75%;
+    top:60%;
 }
 .green-circle
 {
@@ -241,13 +248,13 @@ html,body
 }
 .blue2
 {
-    left:80%;
+    left:55%;
     top:-20%;
 }
 .blue3
 {
-    left:40%;
-    top:10%;
+    left:75%;
+    top:5%;
 }
 .blue-circle
 {
