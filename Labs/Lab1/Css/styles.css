@@ -13,7 +13,7 @@ body
     font-size:14px;
     font-family: 'PT Sans', sans-serif;
     line-height: 22px;
-    background:rgb(241, 232, 232);
+    background:rgb(255, 255, 255);
 }
 html,body
 {
@@ -24,41 +24,32 @@ html,body
 {
     display: grid;
     height: 100%;
-    grid-template-rows: 150px 50px 300px 1fr 100px;
+    grid-template-rows: 150px 50px 300px 1fr 150px;
 }
-.content
+.footer-class,.header-class,.menu,.slider,.content
 {
-    grid-row-start: 4;
-    min-height: 100%;
     position: relative;
-    background:white;
 }
-.content-inside 
+.footer-class,.header-class,.menu, .content
 {
-    background:white;
     z-index:10;
-    padding: 20px;
-    padding-bottom: 50px;
+    width: 100%;
 }
 .footer-class,.header-class
 {
-    padding:15px;
-    display:grid;
+    display:grid;  
 }
 .header-class
 {
     grid-row-start: 1;
-    position: relative;
-    z-index:10;
+    grid-gap: 10px 10px;
     background:rgb(196, 183, 183);
     grid-template-areas:".a...b.";
 }
 .footer-class
 {
-    grid-row-start: 7;
-    margin-top: -50px;
-    position: relative;
-    z-index:10;
+    grid-row-start: 5;
+    height: 150x;  
     background:gray;
     grid-template-areas:".a.b.c";
 }
@@ -142,9 +133,6 @@ html,body
 .menu
 {
     grid-row-start: 2;
-    position: relative;
-    z-index:10;
-    width: 100%;
     background:rgb(70, 63, 63);
     display:grid;
     grid-template-columns: 1fr repeat(5,120px) 1fr;
@@ -193,7 +181,6 @@ html,body
 {
     grid-row-start: 3;
     background:rgb(247, 240, 240);
-    width: 100%;
 }
 .slider-image
 {
@@ -203,7 +190,6 @@ html,body
     z-index: 0;
     width: 1000px;
     height: 300px;
-    position: relative;
 }
 .red-circle,.blue-circle,.green-circle
 {
@@ -266,4 +252,18 @@ html,body
     height: 150px;
     width: 150px;
     z-index:3;
+}
+.content
+{
+    grid-row-start: 4;
+    height:1000px;
+    position: relative;
+    background:white;
+}
+.content-inside 
+{
+    background:white;
+    z-index:10;
+    padding: 20px;
+    padding-bottom: 50px;
 }
