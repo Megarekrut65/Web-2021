@@ -23,11 +23,12 @@ html,body
 .cover-class
 {
     display: grid;
-    grid-template-rows: 150px 50px 300px 1fr 150px;
-    overflow-y: scroll;
+    height: 100%;
+    grid-template-rows: 150px 50px 300px 1fr 100px;
 }
 .content
 {
+    grid-row-start: 4;
     min-height: 100%;
     position: relative;
     background:white;
@@ -46,7 +47,7 @@ html,body
 }
 .header-class
 {
-    
+    grid-row-start: 1;
     position: relative;
     z-index:10;
     background:rgb(196, 183, 183);
@@ -54,6 +55,7 @@ html,body
 }
 .footer-class
 {
+    grid-row-start: 7;
     margin-top: -50px;
     position: relative;
     z-index:10;
@@ -139,6 +141,7 @@ html,body
 }
 .menu
 {
+    grid-row-start: 2;
     position: relative;
     z-index:10;
     width: 100%;
@@ -188,10 +191,11 @@ html,body
 }
 .slider
 {
+    grid-row-start: 3;
     background:rgb(247, 240, 240);
     width: 100%;
 }
-.under-menu-image
+.slider-image
 {
     margin-left:auto;
     margin-right:auto;
