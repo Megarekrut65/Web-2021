@@ -17,16 +17,16 @@ body
 }
 html,body
 {
-    min-width: 1000px;
+    min-width: 960px;
     height: 100%;
 }
 .cover-class
 {
     display: grid;
     height: 100%;
-    grid-template-rows: 160px 50px 300px minmax(900px,1fr) 150px;
+    grid-template-rows: 160px 50px 300px minmax(900px,1fr) 125px;
 }
-.footer-class,.header-class,.menu,.slider,.content
+.footer-class,.header-class,.menu,.content
 {
     position: relative;
 }
@@ -49,9 +49,10 @@ html,body
 .footer-class
 {
     grid-row-start: 5;
-    height: 150x;  
+    height: 125x;  
     background:gray;
     grid-template-areas:".a.b.c";
+    color:white;
 }
 .header-box1
 {
@@ -85,32 +86,6 @@ html,body
     float:left;
     margin:15px;
 }
-.block1
-{
-    grid-area: a;
-}
-.block2
-{
-    grid-area: b;
-}
-.block3
-{
-    grid-area: c;
-}
-.block,.block1,.block2,.block3
-{
-    padding:10px;
-    max-height:100px;
-    width: 150px;
-}
-.white-text
-{
-    color:white;
-}
-.white-text p
-{
-    margin:5px;
-}
 .text-underline
 {
     text-decoration:underline;
@@ -133,6 +108,11 @@ html,body
 .text-italic
 {
     font-style: italic;
+}
+.menu a:active,.menu a:hover,.menu a,.footer-class a:active, .footer-class a:hover,.footer-class a
+{
+    text-decoration: none;
+    color: white;
 }
 .menu ul
 {
@@ -170,6 +150,7 @@ html,body
 }
 .slider-image
 {
+    position: relative;
     margin-left:auto;
     margin-right:auto;
     overflow: hidden;
@@ -249,15 +230,87 @@ html,body
 {
     padding: 20px;
     padding-bottom: 50px;
+    display:grid;
+    grid-template-columns: 400px 1fr;
 }
 .news-box
 {
     width:300px;
+    height: 580px;
     background:rgb(56, 55, 55);
-    color:white;
-    padding:20px;
-    margin:50px;
+    color:white;;
     border-radius: 2px;
     border:1px solid black;
-    box-shadow: white;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+.news-box,.content-box
+{
+    padding:20px;
+    margin:40px;
+}
+.content-box
+{
+    margin-left:0px;
+}
+.content-box
+{
+    color:rgb(116, 107, 107);
+    text-align: justify;
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+.catalog-content
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.clothes-box
+{
+    padding:10px;
+    margin:15px;
+    margin-left: 0px;
+    margin-top: 25px;
+    width:150px;
+    height: 250px;
+    background:rgb(255, 243, 243);
+    box-shadow: 0 0 8px black;
+}
+.clothes-box,.clothes-image
+{
+    border-radius: 10px;
+}
+.clothes-image
+{
+    height: 180px;
+    width:100%;
+    background-image: url("../Images/clothes-background.jpg");
+}
+.clothes-info
+{
+    width:100%;
+    height: 70px;
+    text-align: center;
+}
+.footer-class ul
+{
+    list-style-type: none;
+}
+.block1
+{
+    grid-area: a;
+}
+.block2
+{
+    grid-area: b;
+}
+.block3
+{
+    grid-area: c;
+}
+.block,.block1,.block2,.block3
+{
+    padding:10px;
+    max-height:100px;
+    width: 150px;
 }
