@@ -134,13 +134,18 @@ html,body
 {
     font-style: italic;
 }
+.menu ul
+{
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+}
 .menu
 {
     grid-row-start: 2;
     background:rgb(70, 63, 63);
-    display:grid;
-    grid-template-columns: 1fr repeat(5,120px) 1fr;
-    grid-gap: 5px 5px;
+    display:flex;
+    justify-content: center;
 }
 .menu-item:hover
 {
@@ -149,37 +154,14 @@ html,body
 .menu-item + .menu-item
 {
     border-left: 1px solid white;
-    padding-left:4px;
-}
-.menu-item1
-{
-    grid-column-start: 2;
-    grid-column-end: 2;
-}
-.menu-item2
-{
-    grid-column-start: 3;
-    grid-column-end: 3;
-}
-.menu-item3
-{
-    grid-column-start: 4;
-    grid-column-end: 4;
-}
-.menu-item4
-{
-    grid-column-start: 5;
-    grid-column-end: 5;
-}
-.menu-item5
-{
-    grid-column-start: 6;
-    grid-column-end: 6;
+    padding-left:9px;
 }
 .menu-item
 {
     color:white;
     text-align: center;
+    margin-left:10px;
+    font-size:20px;
 }
 .slider
 {
