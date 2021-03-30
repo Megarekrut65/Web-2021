@@ -20,9 +20,12 @@ html,body
     min-width: 960px;
     height: 100%;
 }
+.footer-class,.header-class,.cover-class
+{
+    display:grid;  
+}
 .cover-class
 {
-    display: grid;
     height: 100%;
     grid-template-rows: 160px 50px 300px minmax(900px,1fr) 125px;
 }
@@ -34,10 +37,6 @@ html,body
 {
     z-index:10;
     width: 100%;
-}
-.footer-class,.header-class
-{
-    display:grid;  
 }
 .header-class
 {
@@ -68,9 +67,14 @@ html,body
     width: 400px;
     padding: 5px;
 }
-.basic-text,.company-name
+.basic-text,.company-name,.logo
 {
     margin:15px;
+}
+.basic-text
+{
+    font-size:14px;
+    color:rgb(75, 68, 68);
 }
 .company-name
 {
@@ -84,16 +88,6 @@ html,body
     height: 100px;
     width: 100px;
     float:left;
-    margin:15px;
-}
-.text-underline
-{
-    text-decoration:underline;
-}
-.basic-text
-{
-    font-size:14px;
-    color:rgb(75, 68, 68);
 }
 .number-text
 {
@@ -127,7 +121,7 @@ html,body
     display:flex;
     justify-content: center;
 }
-.menu-item:hover
+.menu-item:hover,.text-underline
 {
     text-decoration: underline;
 }
@@ -372,7 +366,7 @@ html,body
 {
     grid-area: c;
 }
-.block,.block1,.block2,.block3
+.block1,.block2,.block3
 {
     padding:10px;
     max-height:100px;
