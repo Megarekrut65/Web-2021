@@ -15,25 +15,32 @@ body
     line-height: 22px;
     background:rgb(255, 255, 255);
 }
-html,body
+html,
+body
 {
     min-width: 960px;
     height: 100%;
 }
-.footer-class,.header-class,.cover-class
+.footer-class,
+.header-class,
+.cover-class
 {
     display:grid;  
 }
 .cover-class
 {
     height: 100%;
-    grid-template-rows: 160px 50px 300px minmax(900px,1fr) 125px;
+    grid-template-rows: 160px 50px 300px minmax(900px,1fr) 170px;
 }
-.footer-class,.header-class,.menu,.content
+.footer-class,
+.header-class,
+.menu,.content
 {
     position: relative;
 }
-.footer-class,.header-class,.menu, .content
+.footer-class,
+.header-class,
+.menu, .content
 {
     z-index:10;
     width: 100%;
@@ -48,7 +55,7 @@ html,body
 .footer-class
 {
     grid-row-start: 5;
-    height: 125x;  
+    height: 170px;  
     background:#393e46;
     grid-template-areas:".a.b.c";
     color:white;
@@ -67,7 +74,9 @@ html,body
     width: 400px;
     padding: 5px;
 }
-.basic-text,.company-name,.logo
+.basic-text,
+.company-name,
+.logo
 {
     margin:15px;
 }
@@ -103,7 +112,12 @@ html,body
 {
     font-style: italic;
 }
-.menu a:active,.menu a:hover,.menu a,.footer-class a:active, .footer-class a:hover,.footer-class a
+.menu a:active,
+.menu a:hover,
+.menu a,
+.footer-class a:active,
+.footer-class a:hover,
+.footer-class a
 {
     text-decoration: none;
     color: white;
@@ -121,7 +135,8 @@ html,body
     display:flex;
     justify-content: center;
 }
-.menu-item:hover,.text-underline
+.menu-item:hover,
+.text-underline
 {
     text-decoration: underline;
 }
@@ -152,7 +167,9 @@ html,body
     width: 1000px;
     height: 300px;
 }
-.red-circle,.blue-circle,.green-circle
+.red-circle,
+.blue-circle,
+.green-circle
 {
     border-radius: 50%;
     opacity: 0.2;
@@ -238,7 +255,8 @@ html,body
     grid-column-start: 1;
     grid-column-end: 1;
 }
-.news-box,.content-box
+.news-box,
+.content-box
 {
     padding:20px;
     margin:40px;
@@ -295,11 +313,15 @@ html,body
     background:rgb(255, 243, 243);
     box-shadow: 0 0 8px black;
 }
-.clothes-box,.clothes-image
+.clothes-box,
+.clothes-image
 {
     border-radius: 10px;
 }
-.clothes-image,.clothes-info,.clothes-text,.clothes-buy
+.clothes-image,
+.clothes-info,
+.clothes-text,
+.clothes-buy
 {
     width:100%;
 }
@@ -326,7 +348,8 @@ html,body
     display:flex;
     justify-content: space-between;
 }
-.clothes-availability,.clothes-button
+.clothes-availability,
+.clothes-button
 {
     margin-top:auto;
     margin-bottom: auto;
@@ -366,7 +389,9 @@ html,body
 {
     grid-area: c;
 }
-.block1,.block2,.block3
+.block1,
+.block2,
+.block3
 {
     padding:10px;
     max-height:100px;
