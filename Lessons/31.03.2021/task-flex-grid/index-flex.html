@@ -1,0 +1,200 @@
+<html>
+    <head>
+        <title>Flex</title>
+        <style>
+            .big-box
+            {
+                margin:auto;                
+                width: 800px;
+                height: 400px;
+            }
+            .big-box,
+            .box1,
+            .box2,
+            .box3,
+            .box-two
+            {
+                display:flex;
+                justify-content: stretch;
+            }
+            .box1,
+            .box2,
+            .box3
+            {
+                width: 33%;
+                height: 100%;
+                flex-direction: column;
+                padding:5px;
+                padding-right: 0px;
+                padding-left: 0px;
+            }
+            .box-flex,
+            .box-flex-column
+            {
+                display: flex;
+            }
+            .box-flex-column
+            {
+                flex-direction: column;
+            }
+            .box-blue,
+            .box-red,
+            .box-violet,
+            .box-green,
+            .box-black,
+            .box-gray,
+            .box-gold,
+            .box-cyan,
+            .box-black-blue
+            {
+                margin:5px;
+                margin-left:0px;
+                margin-bottom: 0px;;
+                border-radius: 5px;
+            }
+            .box-blue
+            {
+                background: skyblue;
+            }
+            .box-red
+            {
+                background: tomato;
+            }
+            .box-violet
+            {
+                background: violet;
+            }
+            .box-green
+            {
+                background: green;
+            }
+            .flex1
+            {
+                flex:1;
+            }
+            .flex2
+            {
+                flex:2;
+            }
+            .flex3
+            {
+                flex:3;
+            }
+            .flex4
+            {
+                flex:4;
+            }
+            .flex5
+            {
+                flex:5;
+            }
+            .flex6
+            {
+                flex:6;
+            }
+            .flex7
+            {
+                flex:7;
+            }
+            .flex8
+            {
+                flex:8;
+            }
+            .flex9
+            {
+                flex:9;
+            }
+            .box-two
+            {
+                width:600px;
+                height:400px;
+                margin:auto; 
+                margin-top:50px;
+                flex-direction: column;
+            }
+            .box-two1
+            {
+                display: flex;
+                flex-direction: row-reverse;
+                flex-wrap: wrap;
+                justify-content: stretch;
+            }
+            .box-black
+            {
+                background: black;
+                height: 100px;
+            }
+            .box-black-blue
+            {
+                height: 100px;
+                background: rgb(24, 19, 54);
+            }
+            .box-gold
+            {
+                background:gold;
+            }
+            .box-gray
+            {
+                background:gray;
+            }
+            .box-cyan
+            {
+                background:cyan;
+            }
+            .flex-wrap
+            {
+                flex-wrap: wrap;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="big-box">
+            <div class="box1">
+                <div class="box-violet flex4"></div>
+                <div class="box-flex flex3">
+                    <div class="box-green flex1"></div>
+                    <div class="box-flex-column flex1">
+                        <div class="box-blue flex2"></div>
+                        <div class="box-red flex8"></div>
+                    </div>
+                </div>
+                <div class="box-green flex2"></div>
+            </div>
+            <div class="box2">
+                <div class="box-flex flex7">
+                    <div class="box-green flex1"></div>
+                    <div class="box-flex-column flex1">
+                        <div class="box-blue flex2"></div>
+                        <div class="box-red flex8"></div>
+                    </div>
+                </div>
+                <div class="box-violet flex3"></div>
+            </div>
+            <div class="box3">
+                <div class="box-flex-column flex3">
+                    <div class="box-green flex1"></div>
+                    <div class="box-flex flex1">
+                        <div class="box-blue flex3"></div>
+                        <div class="box-red flex9"></div>
+                    </div>
+                </div>
+                <div class="box-violet flex5"></div>
+                <div class="box-blue flex1"></div>
+            </div>
+        </div>
+        <div class="box-box">
+            <div class="box-two">
+                <div class="box-black flex1"></div>
+                <div class="box-two1 flex6">
+                    <div class="box-cyan flex7"></div>
+                    <div class="box-flex-column flex1">
+                        <div class="box-gold flex7"></div>
+                        <div class="box-gray flex5"></div>
+                    </div>
+                </div>
+                <div class="box-black-blue flex1"></div>
+            </div>
+        </div>
+        
+    </body>
+</html>

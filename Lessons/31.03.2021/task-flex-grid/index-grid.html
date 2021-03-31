@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>Grid</title>
+        <style>
+            .big-box
+            {
+                background:rgb(235, 210, 164);
+                border:3px solid rgb(255, 0, 0);
+                border-radius: 5px;
+                height: 400px;
+                width: 800px;
+                grid-template-areas: 
+                                    "a a a"
+                                    "a a a"
+                                    "b c d"
+                                    "b e .";
+            }
+            .box1-a,
+            .box1-b,
+            .box1-c
+            {
+                background: rgb(239, 255, 95);
+                border:2px solid rgb(204, 204, 104);
+                padding:20px;
+                border-radius: 5px;
+            }
+            .box1-a
+            {
+                grid:a;
+            }
+            .box1-b
+            {
+                grid:b;
+            }
+            .box1-c
+            {
+                grid:c;
+            }
+            .box1,
+            .box2,
+            .box3,
+            .box4,
+            .box5
+            {
+                background: rgb(253, 205, 116);
+                border:2px solid orange;
+                border-radius: 5px;
+                padding:20px;
+                color:rgb(231, 56, 56);
+            }
+            .box1
+            {
+                grid-area: a;
+                display: grid;
+                grid-template-areas: 
+                                    "a"
+                                    "b"
+                                    "c";
+            }
+            .box2
+            {
+                grid-area: b;
+            }
+            .box3
+            {
+                grid-area: c;
+            }
+            .box4
+            {
+                grid-area: d;
+            }
+            .box5
+            {
+                grid-area: e;
+            }
+            .body-box,
+            .big-box
+            {
+                margin: auto;
+                margin-top:25px;
+                margin-bottom:25px;
+                display:grid;
+            }
+            .body-box
+            {
+                width: 600px;
+                height: 450px;
+                grid-template-areas: 
+                                    "hr hr hr hr"
+                                    "a b c d"
+                                    "e f g h"
+                                    "i j . ."
+                                    "fr fr fr fr";
+                grid-gap: 5px;
+            }
+            .header-class,
+            .footer-class,
+            .panel-a,
+            .panel-b,
+            .panel-c,
+            .panel-d,
+            .panel-e,
+            .panel-f,
+            .panel-g,
+            .panel-h,
+            .panel-i,
+            .panel-j
+            {
+                background: gray;
+                border-radius: 2px;
+                color:white;
+                padding:20px;
+            }
+            .header-class
+            {
+                grid-area:hr;
+            }
+            .footer-class
+            {
+                grid-area:fr;
+            }
+            .panel-a
+            {
+                grid-area:a;
+            }
+            .panel-b
+            {
+                grid-area:b;
+            }
+            .panel-c
+            {
+                grid-area:c;
+            }
+            .panel-d
+            {
+                grid-area:d;
+            }
+            .panel-e
+            {
+                grid-area:e;
+            }
+            .panel-f
+            {
+                grid-area:f;
+            }
+            .panel-g
+            {
+                grid-area:g;
+            }
+            .panel-h
+            {
+                grid-area:h;
+            }
+            .panel-i
+            {
+                grid-area:i;
+            }
+            .panel-j
+            {
+                grid-area:j;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="big-box">
+            <div class="box1">
+                <div class="box1-a">a</div>
+                <div class="box1-b">b</div>
+                <div class="box1-c">c</div>
+            </div>
+            <div class="box2">Two</div>
+            <div class="box3">Three</div>
+            <div class="box4">Four</div>
+            <div class="box5">Five</div>
+        </div>
+        <div class="body-box">
+            <div class="header-class">My header</div>
+            <div class="panel-a">Panel A</div>
+            <div class="panel-b">Panel B</div>
+            <div class="panel-c">Panel C</div>
+            <div class="panel-d">Panel D</div>
+            <div class="panel-e">Panel E</div>
+            <div class="panel-f">Panel F</div>
+            <div class="panel-g">Panel G</div>
+            <div class="panel-h">Panel H</div>
+            <div class="panel-i">Panel I</div>
+            <div class="panel-j">Panel J</div>
+            <div class="footer-class">My footer</div>
+        </div>
+    </body>
+</html>
