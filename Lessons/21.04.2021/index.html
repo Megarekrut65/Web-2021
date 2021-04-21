@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Web</title>
+        <style>
+            input
+            {
+                margin:10px;
+            }
+            .box
+            {
+                margin:20px;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+            }
+        </style>
+        <script src="code.js"></script>
+    </head>
+    <body>
+        <h2>Task a</h2>
+        <p>
+            Написати функцію, що виводить на консоль числа від 1 до n, де n — це ціле число, яке функція приймає в якості параметру, з такими умовами:
+            виводить fizz замість чисел, кратних 3;
+            виводить buzz замість чисел, кратних 5;
+            виводить fizzbuzz замість чисел, кратних як 3, так і 5.
+        </p>
+        <h2>Task b</h2>
+        <p>Написати функція, що виводить форматовану вартість замовлення.</p>
+        <h2>Task c</h2>
+        <p>Дано дві точки на площині. Якщо точки в одній чверті підрахувати відстань між точками, в протилежному випадку вивести номер чверті в якій знаходитися кожна точка. Інші випадки теж розглянути (наприклад х=0 у=0, тощо).</p>
+        <div class = "box">
+            <input type="button" onclick="fizzbuzz1(15)" value="task a1 - 15">
+            <input type="button" onclick="fizzbuzz2(10)" value="task a2 - 10">
+            <input type="button" onclick="fizzbuzz3(5)" value="task a3 - 5">
+            <input type="button" onclick="cost1()" value="task b1 - (0,0)">
+            <input type="button" onclick="cost2(1,4)" value="task b2 - (1,4)">
+            <input type="button" onclick="cost3(23,1)" value="task b3 - (23,1)">
+            <input type="button" onclick="points1(2)" value="task c1 - (2,0) і (0,0)">
+            <input type="button" onclick="points2(-5,-1,-2,-5)" value="task c2 - (-5,-1) і (-2,-5)">
+            <input type="button" onclick="points3(6,-4,7,7)" value="task c3 - (6,-4) і (7,7)">
+        </div>
+    </body>
+</html>
