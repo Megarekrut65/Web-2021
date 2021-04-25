@@ -8,7 +8,14 @@
 }
 html
 {
-    font-size: 1.6vw;
+    font-size: 5vw;
+}
+@media (min-width: 768px) 
+{
+    html
+    {
+        font-size: 1.6vw;
+    }
 }
 body
 {
@@ -30,7 +37,14 @@ body
 .logo
 {
     width: 100%;
-    max-width: 15vw;
+    max-width: 50vw;
+}
+@media (min-width: 768px) 
+{
+    .logo
+    {
+        max-width: 15vw;
+    }
 }
 .basic-text
 {
