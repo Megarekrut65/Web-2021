@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
     <head>
-        <title>Каталог - Archi</title>
-
+        <title>Магазин одягу - Archi</title>
         <link rel="shortcut icon" href="../Images/favicon.png" type="image/png">
         <link rel="stylesheet" type="text/css" href="../Css/styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -10,70 +9,159 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-        </style>
     </head>
     <body>
-      <div class="container-fluid">
+      <header>
         <!--header-->
-        <div class="row my-header">
-          <div class="col-1"></div>
-          <div class="col-5">
-            <img src="../Images/logo.png" alt="logo" class="logo">
-            <p class="company-name">Archi</p>
-            <p class="basic-text">Магазин брендового одягу</p>
+        <div class="container-fluid">
+          <div class="row my-header align-items-center">
+            <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-1"></div>
+            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+              <div class="row align-items-center">
+                <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5 text-sm-right text-md-right text-lg-right text-xl-right text-center">
+                  <img src="../Images/logo.png" alt="logo" class="logo">
+                </div>
+                <div class="col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7 text-sm-left text-md-left text-lg-left text-xl-left text-center">
+                  <p class="company-name">Archi</p>
+                  <p class="basic-text">Магазин брендового одягу</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 text-sm-center text-md-right text-lg-right text-xl-right text-center">
+              <p class="number-text">+38056327482</p>
+              <p class="number-text">+38022332386</p>
+            </div>
+            <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-1"></div>
           </div>
-          <div class="col-5 text-right">
-            <p class="number-text">+38056327482</p>
-            <p class="number-text">+38022332386</p>
+          <!--header end-->
+
+          <!--menu-->
+          <div class="row bg-dark">
+            <div class="col-12">
+              <nav class="navbar navbar-dark navbar-expand-sm justify-content-center">
+                <ul class="navbar-nav text-center">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Html/index.html">Головна</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="../Html/catalog.html">Каталог</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Html/delivery.html">Доставка і оплата</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Прайс-лист</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
-          <div class="col-1"></div>
-        </div>
-        <!--header end-->
+          <!--menu end-->
 
-        <!--menu-->
-        <div class="row bg-dark">
-          <div class="col-12">
-            <nav class="navbar navbar-dark navbar-expand-sm justify-content-center">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="../Html/index.html">Головна</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="../Html/catalog.html">Каталог</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../Html/delivery.html">Доставка і оплата</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Прайс-лист</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Контакти</a>
-                </li>
-              </ul>
-            </nav>
+          <!--slider-->
+          <div class="row">
+            <div class="slider col-12">
+              <div class="slider-image">
+                <div class="red-circle red1"></div>
+                <div class="red-circle red2"></div>
+                <div class="blue-circle blue1"></div>
+                <div class="blue-circle blue2"></div>
+                <div class="blue-circle blue3"></div>
+                <div class="green-circle green1"></div>
+                <div class="green-circle green2"></div>
+              </div>    
+            </div>
           </div>
+          <!--slider end-->
         </div>
-        <!--menu end-->
+      </header>
+      <section>
+        <div class="container-fluid">
+          <!--content-->
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+              <div class="news-box p-4">
+                <h1>Новини</h1>
+                <p>Наш асортимент оновлено! Відтепер колекція Весна-Літо доступна за космічними цінами у нашому інтернет-магазині.</p>
+                <p>Придбай головні тренди Весни-2021 не виходячи з дому.</p>
+                <p>Гарячим хітом цієї весни є широкі штани з високою талією.</p>
+                <p>Монохромні образи завжди поза часом і трендами. А світшоти та худі знову дістали визнання і довіру серед публіки завдяки тому, що їх можна носити без верхнього одягу навіть у прохолодні дні.</p>
+                <p>Розсипи паєток і скляних намистин, вінілові тканини і хвилюючі вирізи, ностальгічні силуети і вінтажний крій — усе це про стиль диско, який знову очолив тенденції цього сезону. Затяжний локдаун і жорсткі обмеження лише посилили непереборне бажання одягатися яскраво і нарочито ошатно. </p>
+                <p class="text-right text-italic font-italic">Адміністрація сайту</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+              <div class="content-box p-4">
+                <h1 class="text-left">Магазин одягу «Archi»</h1>
+                <p>Ми вітаємо вас в улюбленому інтернет-магазині одягу "Арчі".</p>
+                <h2 class="text-left">Хто ми?</h2>
+                <p>Команда, яка хоче і готова відповісти на всі ваші,навіть самі незручні, питання. Телефонуйте, ми раді вас чути!</p>
+                <h2 class="text-left">Що ми вам пропонуємо?</h2>
+                <p>На перший погляд відповідь проста - купити одяг собі або близьким. Але це тільки на перший погляд. Головне, що ми вам пропонуємо - це дружбу і чесні партнерські відносини. Ми завжди готові порадити і запропонувати вам саме той товар, який вам потрібен.</p>
+                <h2 class="text-left">Чому наш бренд унікальний?</h2>
+                <div class="container-fluid">
+                  <div class="row justify-content-center">
+                      <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-0 "></div>
+                      <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-3 uniqueness-item"><p>Натуральна шерсть</p></div>
+                      <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-1"></div>
+                      <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-3 uniqueness-item"><p>Натуральні барвники</p></div>
+                      <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-1"></div>
+                      <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-3 uniqueness-item"><p>Тільки ручна робота</p></div>
+                      <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-0"></div>
+                      <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-3 uniqueness-item"><p>Виготовлено з любов'ю</p></div>
+                      <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-1"></div>
+                      <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-3 uniqueness-item"><p>Особливий дизайн</p></div>
+                      <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-1"></div>
+                      <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-3 uniqueness-item"><p>Овечки не постраждали!</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--content end-->
+        </div>
+      </section>
+      <footer>
+        <div class="container-fluid my-footer">              
+          <!--footer-->
+          <div class="row justify-content-center">
+            <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-1"></div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 text-sm-center text-md-left text-lg-left text-xl-left text-center">
+              <p>Компанія Арчі <sup>&#174;</sup> archi@gmail.com</p>
+            </div>
 
-        <!--slider-->
-        <div class="row">
-          
-        </div>
-        <!--slider end-->
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-4">
+              <nav class="navbar navbar-dark justify-content-center">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Html/index.html">Головна</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="../Html/catalog.html">Каталог</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Html/delivery.html">Доставка і оплата</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Прайс-лист</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
 
-        <!--content-->
-        <div class="row">
-          
-        </div>
-        <!--content end-->
-
-        <!--footer-->
-        <div class="row">
-          
-        </div>
-        <!--footer end-->
-      </div>  
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 text-sm-center text-md-right text-lg-right text-xl-right text-center">
+                <p><span class="text-underline">Розробка сайту</span> — Бандалак Олександр</p>
+            </div>
+            <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-1"></div>
+          </div>
+          <!--footer end-->
+        </div>  
+      </footer>
     </body>
 </html>
