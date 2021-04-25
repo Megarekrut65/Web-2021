@@ -177,3 +177,87 @@ body
     color:white;
     padding:2%;
 }
+.clothes-box
+{
+    padding:10px;
+    margin:2vh;
+    margin-top: 8vh;
+    width:15vw;
+    min-width: 150px;
+    background:rgb(255, 243, 243);
+    box-shadow: 0 0 8px black;
+}
+.clothes-box,
+.clothes-image
+{
+    border-radius: 10px;
+}
+.clothes-image,
+.clothes-info,
+.clothes-text,
+.clothes-buy
+{
+    width:100%;
+}
+.clothes-image
+{
+    height: 30vh;
+    min-height: 180px;
+    background-image: url("../Images/clothes-background.jpg");
+}
+.clothes-info
+{
+    height: 13vh;
+    min-height: 70px;
+    text-align: center;
+}
+.clothes-text
+{
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 14px;
+    height: 40%;
+    margin-bottom: 2vh;
+}
+.clothes-buy
+{
+    height: 40%;
+    background: rgb(243, 240, 240);
+    display:flex;
+    justify-content: space-between;
+}
+.clothes-availability,
+.clothes-button
+{
+    margin-top:auto;
+    margin-bottom: auto;
+    font-size:11px;
+    padding:3px;
+}
+@media (min-width: 992px) 
+{
+    .clothes-text
+    {
+        font-size: 1rem;
+    }
+    .clothes-availability,
+    .clothes-button
+    {
+        font-size: 0.7rem;
+    }
+}
+.clothes-availability
+{
+    width: 60%;
+    color:black;
+}
+.clothes-button:hover
+{
+    opacity: 0.8;
+}
+.clothes-button
+{
+    color:white;
+    background: rgb(116, 107, 107);
+    border-radius: 5px;
+}
