@@ -201,7 +201,7 @@ body
 }
 .clothes-image
 {
-    height: 30vh;
+    height: 20vw;
     min-height: 180px;
     background-image: url("../Images/clothes-background.jpg");
 }
