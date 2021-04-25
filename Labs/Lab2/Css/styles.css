@@ -6,45 +6,47 @@
 	font-weight: normal;
 	font-style: normal;
 }
+html
+{
+    font-size: 1.6vw;
+}
 body
 {
-    font-size:14px;
+    font-size:1rem;
     font-family: 'PT Sans', sans-serif;
-    line-height: 22px;
+    line-height: 22;
 }
 .my-header
 {
-    padding-top:30px;
-    padding-bottom:20px;
+    padding-top:5vh;
+    padding-bottom:7vh;
     background:#eeebdd;
 }
-.basic-text,
 .company-name,
 .logo
 {
-    margin-top:15px;
+    margin-top:1vh;
 }
 .logo
 {
     width: 100%;
-    max-width: 100px;
+    max-width: 15vw;
 }
 .basic-text
 {
-    font-size:14px;
+    font-size:1rem;
     color:rgb(75, 68, 68);
 }
 .company-name
 {
-    padding-top:10px;
     color:rgb(82, 82, 82);
     font-weight:bold;
-    font-size:32px;
+    font-size:2.2857rem;
 }
 .number-text
 {
     font-family: 'Conv_Klik-Light';
-    font-size:24px;
+    font-size:1.7143rem;
     color:rgb(75, 68, 68);
 }
 .slider
@@ -60,7 +62,8 @@ body
     z-index: 0;
     width: 100%;
     max-width: 1000px;
-    height: 300px;
+    height: 45vh;
+    max-height: 300px;
 }
 .red-circle,
 .blue-circle,
@@ -85,8 +88,8 @@ body
     background:red;  
     width: 20%;
     padding-top:20%;
-    min-height: 150px;
-    min-width: 150px;
+    min-height: 7vh;
+    min-width: 7vh;
     z-index:1;
 }
 .green1
@@ -104,8 +107,8 @@ body
     background:green;
     width: 25%;
     padding-top:25%;
-    min-height: 188px;
-    min-width: 188px;
+    min-height: 10vh;
+    min-width: 10vh;
     z-index:2;
 }
 .blue1
@@ -128,8 +131,8 @@ body
     background:blue;
     width: 15%;
     padding-top:15%;
-    min-height: 113px;
-    min-width: 113px;
+    min-height: 5vh;
+    min-width: 5vh;
     z-index:3;
 }
 .news-box
@@ -139,28 +142,25 @@ body
     background:rgb(56, 55, 55);
     color:white;
     border-radius: 2px;
-    border:1px solid black;
+    border:0.004vw solid black;
 }
 .news-box,
 .content-box
 {
-    padding:20px;
-    padding-bottom: 30px;
-    margin-top:40px;
-    margin-bottom:40px;
+    margin-top:3vh;
+    margin-bottom:2vh;
 }
 .content-box
 {
-    width: 90%;
-    margin-left:15px;
+    margin-left:1%;
     color:rgb(116, 107, 107);
     text-align: justify;
 }
 .uniqueness-item
 {
-    margin-top:15px;
+    margin-top:2%;
     background:rgb(229, 230, 238);
-    border:1px solid black;
+    border:0.001vw solid black;
     border-radius: 20px 20px 20px 0px;
     text-align:center;
     color:black;
@@ -172,7 +172,8 @@ body
 }
 .my-footer
 { 
+    margin-top:15vh;
     background:#393e46;
     color:white;
-    padding:15px;
+    padding:2%;
 }
