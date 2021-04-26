@@ -196,7 +196,7 @@ body
     padding:10px;
     margin:2vh;
     margin-top: 8vh;
-    width:15vw;
+    width:70vw;
     min-width: 150px;
     background:rgb(255, 243, 243);
     box-shadow: 0 0 8px black;
@@ -215,21 +215,23 @@ body
 }
 .clothes-image
 {
-    height: 20vw;
+    height: 80vw;
     min-height: 180px;
     background-image: url("../Images/clothes-background.jpg");
 }
+
 .clothes-info
 {
-    height: 13vh;
+    height: 40vw;
     min-height: 70px;
     text-align: center;
 }
+
 .clothes-text
 {
     vertical-align: middle;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
     height: 40%;
     margin-bottom: 2vh;
 }
@@ -245,10 +247,10 @@ body
 {
     margin-top:auto;
     margin-bottom: auto;
-    font-size:11px;
+    font-size:18px;
     padding:3px;
 }
-@media (min-width: 992px) 
+@media(min-width: 468px)
 {
     .clothes-text
     {
@@ -258,6 +260,21 @@ body
     .clothes-button
     {
         font-size: 0.7rem;
+    }
+}
+@media(min-width: 768px)
+{
+    .clothes-info
+    {
+        height: 8vw;
+    }
+    .clothes-image
+    {
+        height: 20vw;
+    }
+    .clothes-box
+    {
+        width:17vw;
     }
 }
 .clothes-availability
