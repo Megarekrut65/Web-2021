@@ -193,7 +193,8 @@ body
 }
 .clothes-box
 {
-    padding:10px;
+    padding:1vw;
+    padding-bottom: 4vw;
     margin:2vh;
     margin-top: 8vh;
     width:70vw;
@@ -222,8 +223,6 @@ body
 
 .clothes-info
 {
-    height: 40vw;
-    min-height: 70px;
     text-align: center;
 }
 
@@ -232,12 +231,10 @@ body
     vertical-align: middle;
     font-weight: bold;
     font-size: 20px;
-    height: 40%;
     margin-bottom: 2vh;
 }
 .clothes-buy
 {
-    height: 40%;
     background: rgb(243, 240, 240);
     display:flex;
     justify-content: space-between;
@@ -264,10 +261,6 @@ body
 }
 @media(min-width: 768px)
 {
-    .clothes-info
-    {
-        height: 8vw;
-    }
     .clothes-image
     {
         height: 20vw;
