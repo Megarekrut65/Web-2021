@@ -1,11 +1,33 @@
 <html>
-    <head>
-        <title>Web</title>
-        <style>
-        </style>
-        <script src="code.js"></script>
-    </head>
-    <body>
+
+<head>
+    <title>Web</title>
+    <style>
+        .btn {
+            background: yellow;
+            width: 50px;
+            text-align: center;
+        }
         
-    </body>
+        .btn:hover {
+            background: rgb(161, 161, 44);
+        }
+    </style>
+    <script src="code.js"></script>
+</head>
+
+<body onload="setBtns()">
+    <form>
+        <input size="5" type="text" id="first" required> +
+        <input size="5" type="text" id="second" required> =
+        <input size="5" type="text" id="res">
+        <div class="btn" id="btnPlus">
+            <p>+</p>
+        </div>
+        <div class="btn" id="btnMinus">
+            <p>-</p>
+        </div>
+    </form>
+</body>
+
 </html>
