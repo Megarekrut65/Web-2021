@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>World Landmarks</title>
+    <style>
+        body {
+            font-size: 16px;
+        }
+        
+        .flag-img {
+            margin-top: 50px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        
+        .landmark-img {
+            width: 90%;
+        }
+        
+        .div-column {
+            display: grid;
+            justify-items: center;
+            padding: 10px;
+            background: rgb(216, 212, 212);
+            width: 30%;
+        }
+        
+        .div-row {
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            background: rgb(250, 250, 242);
+        }
+        
+        #main-div {
+            display: grid;
+            justify-items: center;
+        }
+        
+        .my-header {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background: gray;
+            color: white;
+        }
+    </style>
+    <script src="data.js"></script>
+    <script src="code.js"></script>
+</head>
+
+<body onload="addCountries()">
+    <form>
+        <div class="my-header">
+            <p>
+                <label for="countries">Country</label>
+                <select id="countries" onchange="addCountryInfo();return false" onfocus="this.selectedIndex = -1;">
+                    <option>None</option>
+                </select>
+            </p>
+            <p id="basket"></p>
+        </div>
+
+        <div id="main-div">
+        </div>
+    </form>
+</body>
+
+</html>
