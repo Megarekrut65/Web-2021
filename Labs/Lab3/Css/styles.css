@@ -1,0 +1,287 @@
+@font-face 
+{
+	font-family: 'Conv_Klik-Light';
+	src: url('../Fonts/Klik-Light.eot');
+	src: local('☺'), url('../Fonts/Klik-Light.woff') format('woff'), url('../Fonts/Klik-Light.ttf') format('truetype'), url('../Fonts/Klik-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+html
+{
+    font-size: 5vw;
+}
+@media (min-width: 768px) 
+{
+    html
+    {
+        font-size: 1.6vw;
+    }
+}
+body
+{
+    font-size:1rem;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 22;
+}
+.my-header
+{
+    padding-top:5vh;
+    padding-bottom:7vh;
+    background:#eeebdd;
+}
+.company-name,
+.logo
+{
+    margin-top:1vh;
+}
+.logo
+{
+    width: 100%;
+    max-width: 50vw;
+}
+@media (min-width: 768px) 
+{
+    .logo
+    {
+        max-width: 15vw;
+    }
+}
+.basic-text
+{
+    font-size:1rem;
+    color:rgb(75, 68, 68);
+}
+.company-name
+{
+    color:rgb(82, 82, 82);
+    font-weight:bold;
+    font-size:2.2857rem;
+}
+.number-text
+{
+    font-family: 'Conv_Klik-Light';
+    font-size:1.7143rem;
+    color:rgb(75, 68, 68);
+}
+.slider
+{
+    background:rgb(247, 240, 240);
+}
+.slider-image
+{
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    overflow: hidden;
+    z-index: 0;
+    width: 100%;
+    max-width: 1000px;
+    height: 45vh;
+    max-height: 300px;
+}
+.red-circle,
+.blue-circle,
+.green-circle
+{
+    border-radius: 50%;
+    opacity: 0.2;
+    position: absolute;
+}
+.red1
+{
+    left:25%;
+    top:30%;
+}
+.red2
+{
+    left:50%;
+    top:10%;
+}
+.red-circle
+{
+    background:red;  
+    width: 20%;
+    padding-top:20%;
+    min-height: 7vh;
+    min-width: 7vh;
+    z-index:1;
+}
+.green1
+{
+    left:0%;
+    top:-15%;
+}
+.green2
+{
+    left:75%;
+    top:60%;
+}
+.green-circle
+{
+    background:green;
+    width: 25%;
+    padding-top:25%;
+    min-height: 10vh;
+    min-width: 10vh;
+    z-index:2;
+}
+.blue1
+{
+    left:20%;
+    top:70%;
+}
+.blue2
+{
+    left:55%;
+    top:-20%;
+}
+.blue3
+{
+    left:75%;
+    top:5%;
+}
+.blue-circle
+{
+    background:blue;
+    width: 15%;
+    padding-top:15%;
+    min-height: 5vh;
+    min-width: 5vh;
+    z-index:3;
+}
+.news-box
+{
+    width:100%;
+    height: auto;
+    background:rgb(56, 55, 55);
+    color:white;
+    border-radius: 2px;
+    border:0.004vw solid black;
+}
+.news-box,
+.content-box
+{
+    margin-top:3vh;
+    margin-bottom:2vh;
+}
+.content-box
+{
+    margin-left:1%;
+    color:rgb(116, 107, 107);
+    text-align: justify;
+}
+.uniqueness-item
+{
+    margin-top:2%;
+    background:rgb(229, 230, 238);
+    border:0.001vw solid black;
+    border-radius: 20px 20px 20px 0px;
+    text-align:center;
+    color:black;
+}
+.nav-item:hover,
+.text-underline
+{
+    text-decoration: underline;
+}
+.my-footer
+{ 
+    margin-top:15vh;
+    background:#393e46;
+    color:white;
+    padding:2%;
+}
+.clothes-box
+{
+    padding:1vw;
+    padding-bottom: 4vw;
+    margin:2vh;
+    margin-top: 8vh;
+    width:70vw;
+    min-width: 150px;
+    background:rgb(255, 243, 243);
+    box-shadow: 0 0 8px black;
+}
+.clothes-box,
+.clothes-image
+{
+    border-radius: 10px;
+}
+.clothes-image,
+.clothes-info,
+.clothes-text,
+.clothes-buy
+{
+    width:100%;
+}
+.clothes-image
+{
+    height: 80vw;
+    min-height: 180px;
+    background-image: url("../Images/clothes-background.jpg");
+}
+
+.clothes-info
+{
+    text-align: center;
+}
+
+.clothes-text
+{
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 2vh;
+}
+.clothes-buy
+{
+    background: rgb(243, 240, 240);
+    display:flex;
+    justify-content: space-between;
+}
+.clothes-availability,
+.clothes-button
+{
+    margin-top:auto;
+    margin-bottom: auto;
+    font-size:18px;
+    padding:3px;
+}
+@media(min-width: 468px)
+{
+    .clothes-text
+    {
+        font-size: 1rem;
+    }
+    .clothes-availability,
+    .clothes-button
+    {
+        font-size: 0.7rem;
+    }
+}
+@media(min-width: 768px)
+{
+    .clothes-image
+    {
+        height: 20vw;
+    }
+    .clothes-box
+    {
+        width:17vw;
+    }
+}
+.clothes-availability
+{
+    width: 60%;
+    color:black;
+}
+.clothes-button:hover
+{
+    opacity: 0.8;
+}
+.clothes-button
+{
+    color:white;
+    background: rgb(116, 107, 107);
+    border-radius: 5px;
+}
