@@ -275,6 +275,7 @@ body {
     color: white;
     background: rgb(116, 107, 107);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .basket-image {
@@ -304,10 +305,22 @@ body {
     width: 20px;
     text-align: center;
     font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .btn-green {
     color: green;
+}
+
+.basket-btn::selection,
+.clothes-button::selection {
+    background: transparent;
+}
+
+.basket-btn::-moz-selection,
+.clothes-button::-moz-selection {
+    background: transparent;
 }
 
 .btn-red {
