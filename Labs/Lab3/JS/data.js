@@ -1,11 +1,3 @@
-let clotheObj = {
-    name: "",
-    price: 100, //$
-    image: "",
-    selected: false, //is bought by customer
-    count: 0, //number of bought items by customer
-    remained: 15 //is in stock
-}
 var clothesList = [{
         name: 'Пальто "Зірка"',
         price: 543,

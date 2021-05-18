@@ -342,3 +342,8 @@ body {
         width: auto;
     }
 }
+
+.find-box {
+    display: flex;
+    flex-wrap: wrap;
+}

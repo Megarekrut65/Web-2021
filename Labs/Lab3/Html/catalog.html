@@ -104,6 +104,11 @@
                 <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
                     <div class="content-box">
                         <h1>Каталог</h1>
+                        <form class="find-box" onsubmit="findClothes(); return false" id="findForm">
+                            <input type="name" id="inputName" placeholder="Введіть назву товару" maxlength="30">
+                            <input type="button" value="Пошук" onclick="findClothes(); return false">
+                        </form>
+
                         <div class="container-fluid">
                             <div id="allClothes" class="row justify-content-center justify-content-sm-center justify-content-md-between justify-content-lg-between justify-content-xl-between">
                             </div>

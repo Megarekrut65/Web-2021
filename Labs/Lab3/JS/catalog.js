@@ -3,13 +3,13 @@ addScript("code.js")
 
 function setDatas() {
     setAllData()
-    createAllClothes()
+    createAllClothes(boutghClothes)
     return false
 }
 
-function createAllClothes() {
+function createAllClothes(boutghList) {
     var allClothes = document.getElementById(allClothesId)
-    for (item of boutghClothes) {
+    for (item of boutghList) {
         allClothes.appendChild(createClotheBox(clothesList[item.indexInList], item))
     }
 }
@@ -25,6 +25,22 @@ function buyClothe(clothe, item) {
     setBasketCount()
     var availabilityDiv = document.getElementById(clothe.id + allId.availability)
     availabilityDiv.textContent = "В наявності: " + clothe.remained
+}
+
+function findClothes() {
+    var allClothes = document.getElementById(allClothesId)
+    clearBox(allClothes)
+    var part = document.getElementById("inputName").value.trim()
+    var res = new Array()
+    for (item of boutghClothes) {
+        var clothe = clothesList[item.indexInList]
+        if (clothe.name.toLowerCase().search(part.toLowerCase()) >= 0) res.push(item)
+    }
+    createAllClothes(res)
+}
+
+function clearBox(allClothes) {
+    allClothes.innerHTML = ''
 }
 
 function createClotheBox(clothe, item) {
