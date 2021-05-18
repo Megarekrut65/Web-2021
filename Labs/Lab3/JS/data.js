@@ -41,7 +41,9 @@ let allClothesId = "allClothes"
 let allId = {
     parentDiv: "-parentDiv",
     buyBtn: "-buyBtn",
-    availability: "-availability"
+    availability: "-availability",
+    minusBtn: "-minusBtn",
+    plusBtn: "-plusBtn"
 }
 var basketObj = {
     id: "basket",
@@ -50,3 +52,5 @@ var basketObj = {
     price: 0
 }
 var boutghClothes = new Array()
+var basketCount = 0,
+    basketResult = 0

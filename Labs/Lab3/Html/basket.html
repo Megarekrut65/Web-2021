@@ -9,9 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../JS/data.js"></script>
+    <script src="../JS/code.js"></script>
+    <script src="../JS/basket.js"></script>
 </head>
 
-<body>
+<body onload="setOrders(); return false">
     <header>
         <!--header-->
         <div class="container-fluid">
@@ -100,6 +103,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
                     <div class="content-box p-4" id="basketBox">
+
                     </div>
                 </div>
             </div>
