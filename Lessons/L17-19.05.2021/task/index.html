@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <title>Book store</title>
+    <style>
+        body {
+            font-size: 18px;
+        }
+        
+        .my-section,
+        #myForm {
+            border: 1px solid black;
+        }
+        
+        .my-section,
+        #myForm,
+        .my-padding {
+            padding: 10px;
+        }
+        
+        .my-section {
+            margin: 5px;
+        }
+        
+        #myForm {
+            background: rgb(78, 212, 212);
+            margin: 10px;
+            max-width: 1000px;
+        }
+        
+        #resDiv,
+        #myForm {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .align-center {
+            text-align: center;
+        }
+        
+        .align-right {
+            text-align: right;
+        }
+        
+        #inputCount {
+            text-align: left;
+        }
+        
+        #resDiv {
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+    <script src="data.js"></script>
+    <script src="code.js"></script>
+</head>
+
+<body onload="setBooks(); return false">
+    <form id="myForm">
+        <section class="my-section align-center">
+            Замовлення на придбання товару
+        </section>
+        <section class="my-section">
+            <label>Назва товару</label>
+            <br>
+            <select id="bookSelect" onchange="selectBook();return false" onfocus="this.selectedIndex = -1;">
+            </select>
+        </section>
+        <section class="my-section">
+            <label for="inputCount">Кількість:</label>
+            <input type="number" value="0" id="inputCount" min="0" oninput="getCount();return false">
+            <label for="outputPrice">Вартість:</label>
+            <input type="number" id="outputPrice" readonly>
+        </section>
+        <section class="my-section">
+            Спосіб доставки Замовлення
+            <br>
+            <input type="radio" id="radioPost" name="delivery" checked>
+            <label for="radioPost">Поштою</label>
+            <br>
+            <input type="radio" id="radioHome" name="delivery">
+            <label for="radioHome">Доставка додому</label>
+            <br>
+            <input type="checkbox" id="checkPack">
+            <label for="checkPack">У святковій упаковці</label>
+        </section>
+        <section class="my-section align-right">
+            <label for="resultPrice">Загальна вартість замовлення</label>
+            <input type="number" id="resultPrice" readonly>
+            <input type="button" id="resultBtn" value="Підрахувати" onclick="setResultPrice(); return false">
+        </section>
+        <section class="my-section">
+            Дані замовника
+            <br>
+            <label for="inputName">Ім'я:</label>
+            <input type="text" id="inputName" required>
+            <label for="inputAddress">Адреса:</label>
+            <input type="text" id="inputAddress" required>
+        </section>
+        <section class="my-section align-right">
+            <input type="button" onclick="clearCount(); return false" value="Відновити початкові значення полів">
+            <input type="button" onclick="createOrder(); return false" value="Відіслати дані">
+        </section>
+    </form>
+    <div id="resDiv">
+
+    </div>
+</body>
+
+</html>
