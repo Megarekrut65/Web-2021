@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>Histogram</title>
+    <style>
+        .my-histogram {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            width: 90%;
+            margin-right: auto;
+            margin-left: auto;
+            border: 1px solid black;
+            padding: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        var numbersList = new Array()
+
+        function addNumber() {
+            let number = Number(document.getElementById('inputNumber').value)
+            numbersList.push(number)
+            addNumberToContainer()
+            buildHistogram()
+        }
+
+        function addNumberToContainer() {
+            let container = document.getElementById('numbers')
+            var res = ""
+            for (number of numbersList) {
+                res += number + " "
+            }
+            container.textContent = res
+        }
+
+        function buildHistogram() {
+            document.getElementById('output').innerHTML = ''
+            if (numbersList.length == 0) return
+            let maxValue = Math.max.apply(null, numbersList);
+            if (maxValue == 0) maxValue = 0
+            let width = 20
+            let diagramValue = window.innerWidth / 3
+            var histogram = document.createElement('div')
+            histogram.className = "my-histogram"
+            document.getElementById('output').appendChild(histogram)
+            for (item of numbersList) {
+                let heigth = (item * diagramValue) / maxValue
+                if (item == maxValue) heigth = diagramValue
+                histogram.appendChild(createBar(width, heigth))
+            }
+        }
+
+        function createBar(width, heigth) {
+            var bar = document.createElement('div')
+            bar.className = "bg-danger"
+            bar.style.width = width + "px"
+            bar.style.height = heigth + "px"
+            bar.style.border = "1px solid black"
+            return bar
+        }
+
+        function clearHistogram() {
+            numbersList = []
+            document.getElementById('output').innerHTML = ''
+            document.getElementById('numbers').innerHTML = ''
+            document.getElementById('inputNumber').value = 0
+        }
+
+        function undo() {
+            numbersList.pop()
+            addNumberToContainer()
+            buildHistogram()
+        }
+    </script>
+</head>
+
+<body onload="createCalculator(); return false">
+    <div class="p-3">
+        <form>
+            <input type="number" min="0" id="inputNumber" value="0">
+            <input type="button" value="Add number" onclick="addNumber(); return false">
+            <input type="button" value="Undo" onclick="undo(); return false">
+            <input type="button" value="Clear" onclick="clearHistogram(); return false">
+        </form>
+        <p id="numbers"></p>
+        <div id="output"></div>
+    </div>
+</body>
+
+</html>

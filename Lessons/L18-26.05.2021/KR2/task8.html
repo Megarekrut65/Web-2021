@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <title>Alarm clock</title>
+    <style>
+        .my-container {
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function createAlarm() {
+            let alarmName = document.getElementById("nameInput").value
+            let dateTime = getDate()
+            if (dateTime == "") {
+                alert("Enter date!")
+                return
+            }
+            if (alarmName == "") alarmName = "New alarm clock"
+            var nameP = document.createElement('h1');
+            var dateP = document.createElement('h4');
+            nameP.textContent = alarmName
+            dateP.textContent = "Selected time: " + dateTime
+            let container = document.createElement('div');
+            container.className = "m-3 p-3 bg-info"
+            container.appendChild(nameP)
+            container.appendChild(dateP)
+            let output = document.getElementById("output")
+            output.appendChild(container)
+            setClock(dateTime, container)
+        }
+
+        function addPauseStartBtn(container) {
+            let btn = document.createElement('button');
+            btn.textContent = "Pause"
+            btn.className = "m-2"
+            btn.onclick = function() {
+                if (btn.textContent == "Pause")
+                    btn.textContent = "Start"
+                else btn.textContent = "Pause"
+            }
+            container.appendChild(btn)
+            return btn
+        }
+
+        function addCloseBtn(container, clock) {
+            let btn = document.createElement('button');
+            btn.textContent = "Close"
+            btn.onclick = function() {
+                clearInterval(clock)
+                container.parentElement.removeChild(container)
+            }
+            btn.className = "m-2"
+            container.appendChild(btn)
+        }
+
+        function setClock(date, container) {
+            var countDownDate = new Date(date).getTime()
+            var place = document.createElement('div')
+            container.appendChild(place)
+            let btn = addPauseStartBtn(container)
+            var clock = setInterval(function() {
+                if (btn.textContent != "Start") {
+                    var now = new Date().getTime()
+                    var distance = countDownDate - now
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24))
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000)
+                    place.innerHTML = days + "d " + hours + "h " +
+                        minutes + "m " + seconds + "s left until the end."
+                    if (distance < 0) {
+                        clearInterval(clock);
+                        place.innerHTML = "Time out!"
+                        container.className = "m-3 p-3 bg-danger"
+                        container.removeChild(btn)
+                        alert("Time out!")
+                    }
+                }
+            }, 1000);
+            addCloseBtn(container, clock)
+        }
+
+        function getDate() {
+            return document.getElementById("dateInput").value
+        }
+    </script>
+</head>
+
+<body>
+    <form class="p-3 text-center">
+        <label for="nameInput">Clock name</label>
+        <input type="text" id="nameInput">
+        <label for="dateInput">Date and time</label>
+        <input type="datetime-local" required id="dateInput">
+        <input type="button" value="New alarm clock" onclick="createAlarm(); return false">
+    </form>
+    <div id="output" class="my-container"></div>
+
+</body>
+
+</html>
