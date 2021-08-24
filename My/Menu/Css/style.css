@@ -29,6 +29,7 @@ html {
     margin-right: auto;
     padding: 10px;
     font-family: Segoepr;
+    border-spacing: 4px;
 }
 
 .my-product,
@@ -55,7 +56,7 @@ html {
 }
 
 tr {
-    background-color: rgb(187, 187, 187);
+    background-color: rgb(240, 240, 240);
 }
 
 .box {
