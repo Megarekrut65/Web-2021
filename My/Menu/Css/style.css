@@ -31,13 +31,10 @@ html {
     font-family: Segoepr;
 }
 
-.my-name {
-    padding-left: 10px;
-}
-
 .my-product,
 .my-name {
     text-align: left;
+    padding-left: 10px;
 }
 
 .my-weight {
@@ -58,7 +55,7 @@ html {
 }
 
 tr {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(187, 187, 187);
 }
 
 .box {
