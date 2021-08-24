@@ -1,0 +1,74 @@
+@font-face {
+    font-family: SSB;
+    src: url(../Font/Segoe_Script_Bold.ttf);
+}
+
+@font-face {
+    font-family: Segoepr;
+    src: url(../Font/segoepr.ttf);
+}
+
+@font-face {
+    font-family: Segoeprb;
+    src: url(../Font/segoeprb.ttf);
+}
+
+html {
+    font-size: 20px;
+}
+
+.my-title {
+    font-family: SSB;
+    text-align: center;
+}
+
+#my-table,
+#my-table2 {
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    font-family: Segoepr;
+}
+
+.my-name {
+    padding-left: 10px;
+}
+
+.my-product,
+.my-name {
+    text-align: left;
+}
+
+.my-weight {
+    text-align: center;
+}
+
+.my-weight,
+.my-price {
+    width: 150px;
+}
+
+.my-name {
+    width: 200px;
+}
+
+.my-product {
+    width: 300px;
+}
+
+tr {
+    background-color: rgb(240, 240, 240);
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    float: left;
+}
