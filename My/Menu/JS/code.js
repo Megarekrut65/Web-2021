@@ -44,7 +44,7 @@ var pizza1 = [{
     },
     {
         name: "Грецька",
-        product: "перець, черв. цибуля, помідори, маслини, сир фрета, орегано"
+        product: "перець, цибуля, помідори, маслини, сир фрета, орегано"
     },
     {
         name: "Тоскана",
@@ -72,7 +72,7 @@ var pizza2 = [{
         product: "салямі, папероні, моцарелла, перець гіркий"
     },
     {
-        name: "Сицілійська",
+        name: "Сицилійська",
         product: "помідор, анчоуси"
     }
 ]
@@ -189,10 +189,6 @@ var other5 = [{
     {
         name: "Бульйон з пельменями",
         product: ""
-    },
-    {
-        name: "Пательня",
-        product: "фрі, перець, ковбаски мисливські, сир"
     }
 ]
 var meatFish6 = [{
@@ -238,15 +234,18 @@ var meatFish6 = [{
 ]
 var sweets7 = [{
         name: "Млинці з сиром",
-        product: ""
+        product: "",
+        "weight": " "
     },
     {
         name: "Млинці з вишнями",
-        product: ""
+        product: "",
+        "weight": " "
     },
     {
         name: "Віденські вафлі",
-        product: ""
+        product: "",
+        "weight": " "
     }
 ]
 
@@ -267,12 +266,12 @@ function CreateMenu(data, tableId) {
 function CreateTableItem(dat) {
     var tr = document.createElement('tr')
     tr.appendChild(CreateTd(dat.name, "my-name"))
-    var product = ""
-    if (dat.product.length > 0) product = dat.product + "."
-    tr.appendChild(CreateTd(product, "my-product"))
-    var weight = ""
-    if (dat["weight"]) weight = dat["weight"]
-    tr.appendChild(CreateTd(weight, "my-weight"))
+    if (dat.product.length > 0) {
+        tr.appendChild(CreateTd(dat.product + ".", "my-product"))
+    }
+    if (dat["weight"]) {
+        tr.appendChild(CreateTd(dat["weight"], "my-weight"))
+    }
     tr.appendChild(CreateTd("", "my-price"))
     return tr
 }
