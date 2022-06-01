@@ -15,6 +15,7 @@ function createToy(parentId, left, top, size) {
 }
 let state = 0
 let toys
+let audio
 window.onload = function() {
     let size = '4vh'
     let parent = 'container'
@@ -35,9 +36,24 @@ window.onload = function() {
         createToy(parent, '60%', '71%', size),
         createToy(parent, '70%', '75%', size)
     ]
+    audio = new Audio('../music/Bobby_Helms_-_Jingle_Bells_Rock_(musmore.com).mp3');
 }
-
 let intervals;
+let isPlay = false
+
+function playClick() {
+    let btn = document.getElementById('play')
+    if (isPlay) {
+        btn.style.backgroundColor = "greenyellow"
+        isPlay = false
+        audio.pause();
+        audio.currentTime = 0;
+        return
+    }
+    btn.style.backgroundColor = "tomato"
+    isPlay = true
+    audio.play()
+}
 
 function nextState() {
     state++
