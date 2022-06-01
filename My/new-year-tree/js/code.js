@@ -20,19 +20,20 @@ window.onload = function() {
     let parent = 'container'
     toys = [
         createToy(parent, '50%', '18%', size),
-        createToy(parent, '50%', '25%', size),
-        createToy(parent, '44%', '30%', size),
+        createToy(parent, '45%', '25%', size),
+        createToy(parent, '55%', '30%', size),
         createToy(parent, '48%', '35%', size),
-        createToy(parent, '55%', '37%', size),
-        createToy(parent, '45%', '41%', size),
+        createToy(parent, '59%', '40%', size),
+        createToy(parent, '40%', '43%', size),
         createToy(parent, '50%', '50%', size),
-        createToy(parent, '55%', '54%', size),
-        createToy(parent, '45%', '59%', size),
-        createToy(parent, '39%', '67%', size),
-        createToy(parent, '55%', '70%', size),
-        createToy(parent, '50%', '71%', size),
-        createToy(parent, '59%', '73%', size),
-        createToy(parent, '44%', '74%', size)
+        createToy(parent, '33%', '58%', size),
+        createToy(parent, '60%', '60%', size),
+        createToy(parent, '45%', '65%', size),
+        createToy(parent, '20%', '74%', size),
+        createToy(parent, '35%', '71%', size),
+        createToy(parent, '49%', '73%', size),
+        createToy(parent, '60%', '71%', size),
+        createToy(parent, '70%', '75%', size)
     ]
 }
 

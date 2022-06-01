@@ -1,6 +1,6 @@
 .bodyStyle {
-    background: url(../images/background.png) center center fixed;
-    background-size: contain;
+    background: url(../images/background.png) no-repeat center center fixed;
+    background-size: cover;
     position: relative;
     display: flex;
     justify-content: center;
@@ -13,16 +13,21 @@
     border: 1px solid black;
 }
 
-.tree {
+#container {
+    position: relative;
     height: 100%;
+}
+
+.tree {
+    height: 98vh;
 }
 
 .remoteControl {
     position: absolute;
     left: 5%;
     top: 5%;
-    height: 35%;
-    width: 10%;
+    height: 28vh;
+    width: 15vh;
     border-radius: 1vh;
     border: 1vh solid rgb(62, 85, 22);
     display: flex;
