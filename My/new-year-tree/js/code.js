@@ -39,27 +39,13 @@ window.onload = function() {
     audio = new Audio('../music/Bobby_Helms_-_Jingle_Bells_Rock_(musmore.com).mp3');
 }
 let intervals;
-let isPlay = false
-
-function playClick() {
-    let btn = document.getElementById('play')
-    if (isPlay) {
-        btn.style.backgroundColor = "greenyellow"
-        isPlay = false
-        audio.pause();
-        audio.currentTime = 0;
-        return
-    }
-    btn.style.backgroundColor = "tomato"
-    isPlay = true
-    audio.play()
-}
 
 function nextState() {
     state++
     closeIntervals()
     switch (state) {
         case 1:
+            audio.play()
             intervals = oneColor(toys, 300)
             break
         case 2:
@@ -79,6 +65,8 @@ function nextState() {
             toys.forEach(element => {
                 element.style.backgroundColor = "black"
             })
+            audio.pause();
+            audio.currentTime = 0;
     }
 }
 
